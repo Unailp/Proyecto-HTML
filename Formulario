@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario</title>
+
+    </head>
+    
+    <body>
+        
+    <form>
+        <h1>Formulario </h1>
+        <p>Nombre de usuario</p>
+        <input type="text">
+        <p>Contraseña</p>
+        <input type="password">
+        <p>Correo electronico</p>
+        <input type="email">
+        <p>Selecciona tu equipo favorito:</p>
+            <label>
+                <input type="radio" name="Equipo" value="Real Madrid">
+                Real Madrid
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="Equipo" value="Barcelona">
+                Barcelona
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="Equipo" value="Las Palmas">
+                Las Palmas
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="Equipo" value="Atletico de Madrid">
+                Atletico de Madrid
+            </label>
+            <hr>
+            <label>
+                Escoge tu jugador favorito:
+                <select>
+                    <option name="Jugador">Cristiano</option>
+                    <option name="Jugador">Messi</option>
+                    <option name="Jugador">Neymar</option>
+                    <option name="Jugador">Mbappe</option>
+                </select> 
+            </label> 
+
+            <hr>
+
+            <label>
+                Enviar este formulario
+                <input type="submit">
+            </label>
+            <br/>
+            <label>
+                Eliminar los datos 
+                <input type="reset">
+            </label>
+    </form>
+    
+    </body>
+</html>
