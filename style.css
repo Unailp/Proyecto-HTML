@@ -1,3 +1,12 @@
+header {
+    background-color: #dbc926b0;
+}
+main {
+    background-color: #1af575;
+}
+section {
+    background-color: #11d4e2;
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
@@ -38,9 +47,9 @@ a {
     
 }
 hr {
-    border: none;
-    height: 1px;
-    background-color: #000000;
+    border: groove;
+    height: 5px;
+    background-color: #dd0e0e;
     margin: 30px 0;
 }
 .footer {
