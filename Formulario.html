@@ -1,64 +1,71 @@
-<!doctype html>
-<html lang="es-ES">
-    <head>
-        <meta charset="utf-8">
-        <title>Formulario</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        table {
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
 
-    </head>
-    
-    <body>
+<body>
+    <table>
         
-    <form action="" method="post">
-        <h1>Formulario </h1>
-        <p>Nombre de usuario</p>
-        <input type="text">
-        <p>Contraseña</p>
-        <input type="password">
-        <p>Correo electronico</p>
-        <input type="email">
-        <p>Selecciona tu equipo favorito:</p>
-            <label>
-                <input type="radio" name="Equipo" value="Real Madrid">
-                Real Madrid
-            </label>
-            <br/>
-            <label>
-                <input type="radio" name="Equipo" value="Barcelona">
-                Barcelona
-            </label>
-            <br/>
-            <label>
-                <input type="radio" name="Equipo" value="Las Palmas">
-                Las Palmas
-            </label>
-            <br/>
-            <label>
-                <input type="radio" name="Equipo" value="Atletico de Madrid">
-                Atletico de Madrid
-            </label>
-            <hr>
-            <label>
-                Escoge tu jugador favorito:
-                <select>
-                    <option name="Jugador">Cristiano</option>
-                    <option name="Jugador">Messi</option>
-                    <option name="Jugador">Neymar</option>
-                    <option name="Jugador">Mbappe</option>
-                </select> 
-            </label> 
+            <tr>
+                <th>Formulario</th>
+            </tr>
 
-            <hr>
+            <tr>
+                <td>
+                    <form action="https://webhook.site/22b88f77-1999-4283-af32-d7fee8b6712b" method="post">
+                        
+                        <input type="hidden" name="autor" value="Unai Perez Lopez">
 
-            <label>
-                Enviar este formulario
-                <input type="submit">
-            </label>
-            <br/>
-            <label>
-                Eliminar los datos 
-                <input type="reset">
-            </label>
-    </form>
-
-    </body>
+                        <p>Nombre de usuario</p>
+                        <input type="text" name="usuario" required>
+                        <p>Contraseña</p>
+                        <input type="password" name="contrasena" required>
+                        <p>Correo electrónico</p>
+                        <input type="email" name="correo" required>
+                        <p>Selecciona tu equipo favorito:</p>
+                        <label>
+                            <input type="radio" name="equipo" value="Real Madrid" required> Real Madrid
+                        </label><br>
+                        <label>
+                            <input type="radio" name="equipo" value="Barcelona" required> Barcelona
+                        </label><br>
+                        <label>
+                            <input type="radio" name="equipo" value="Las Palmas" required> Las Palmas
+                        </label><br>
+                        <label>
+                            <input type="radio" name="equipo" value="Atletico de Madrid" required> Atlético de Madrid
+                        </label>
+                        <hr>
+                        <label>
+                            Escoge tu jugador favorito:
+                            <select name="jugador" required>
+                                <option value="Cristiano">Cristiano</option>
+                                <option value="Messi">Messi</option>
+                                <option value="Neymar">Neymar</option>
+                                <option value="Mbappe">Mbappé</option>
+                            </select>
+                        </label>
+                        <hr>
+                        <label>
+                            <input type="submit" value="Enviar">
+                        </label>
+                        <label>
+                            <input type="reset" value="Eliminar">
+                        </label>
+                    </form>
+                </td>
+            </tr>
+    </table>
+</body>
 </html>
